@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="resumeChecker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script defer src="resumeChecker.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>AI Resume Analyzer</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resumeChecker.html">Analyze Resume</a></li> <!-- Fixed incorrect link -->
+            <li><a href="resumeTips.html">Resume Tips</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Upload Your Resume for AI Analysis</h2>
+        
+        <!-- Styled File Upload Button -->
+        <label for="resumeFile" class="upload-btn">📂 Choose File</label>
+        <input type="file" id="resumeFile" accept=".txt, .pdf">
+        
+        <!-- File Name Display -->
+        <p id="fileName">No file chosen</p>
+
+        <div id="loader" style="display:none;">Processing...</div>
+
+        <h3>Score: <span id="score">-</span>/100</h3>
+        <progress id="progressBar" value="0" max="100"></progress>
+
+        <div class="feedback">
+            <h3>Feedback</h3>
+            <p id="feedback">Upload a resume to see AI feedback.</p>
+        </div>
+    </div>
+</body>
+</html>
