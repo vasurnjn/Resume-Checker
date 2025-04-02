@@ -51,7 +51,7 @@ async function extractTextFromFile(file) {
 }
 
 async function analyzeResume(resumeText) {
-    const apiKey = ""; 
+    const apiKey = "4Rkjt4s2qde61rf6FtiSeMsoQfqPWpSsJXOrTWK4"; 
     const endpoint = "https://api.cohere.com/v1/generate";
 
     const requestData = {
